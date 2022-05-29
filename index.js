@@ -1,30 +1,17 @@
-// var umut= {
-//     name: 'Umut', //string
-//     age:27, //number
-//     greet(person){
-//         console.log("Hello " +person.name + ", my name is" + " "+this.name)
-//     }
-// }
-
-// var mert={
-//     name:'Mert',
-//     age:34
-// }
-
-class Person{
+Person=class{
   constructor(name,age) {
       this.name=name
       this.age=age
-      this.Meetups=[]
+      this.meetups=[]
   }
   
     greet(person){
         console.log("Hello " +person.name + ", my name is" + " "+this.name)          
     }
 
-    attend(Meetup) {
-        this.Meetups.push(Meetup)
-        Meetup.attendees.push(this)
+    attend(meetup) {
+        this.meetups.push(meetup)
+        meetup.attendees.push(this)
     }
 }
 
