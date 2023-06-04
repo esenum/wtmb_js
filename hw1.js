@@ -27,18 +27,14 @@ Vehicle = class {
     }
     
    }
-   
 
 vehicle1 = new Vehicle('BMW Mercedes','Car',10);
 vehicle2 = new Vehicle('Boeing','Plane',10);
 vehicle3 = new Vehicle('Ferrari','Car',10)
-
-console.log(vehicle1,vehicle2);
+console.log(vehicle1,vehicle2,vehicle3);
 
 vehicle1.expose(vehicle2);
 vehicle2.expose(vehicle1);
-
-
 
 Contest=class{
     constructor(name){
@@ -58,6 +54,5 @@ vehicle2.attendee(tgs);
 vehicle3.attendee(tgs);
 
 tgs.printAttendeesName();
-
 
 vehicle1.appliedPhysicPrincible(vehicle2);
